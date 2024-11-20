@@ -9,5 +9,6 @@ booking and reservation site for your urban destination camping desires
  * [Nosurf Latest (CSRF goodness)](https://github.com/justinas/nosurf)
  * [Bootstrap v5.3](https://getbootstrap.com/)
  * [Vanillajs-Datepicker Latest](https://github.com/mymth/vanillajs-datepicker)
+ * [Notie Latest (notifications for the user)](https://github.com/jaredreich/notie)
 
 
