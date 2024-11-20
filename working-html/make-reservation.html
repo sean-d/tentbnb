@@ -1,104 +1,116 @@
-    <!doctype html>
-    <html lang="en">
-        <head>
-            <!-- Required meta tags -->
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-            <title>make reservation</title>
+        <title>make reservation</title>
 
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-            <style>
-                .my-footer {
-                    height: 5em;
-                    background-color: #163b65;
-                    margin-top: 1.5em;
-                    padding: 1em;
-                    color: white;
-                    font-size: 80%;
-                }
+        <style>
+            .my-footer {
+                height: 5em;
+                background-color: #163b65;
+                margin-top: 1.5em;
+                padding: 1em;
+                color: white;
+                font-size: 80%;
+            }
 
-                .room-image {
-                    width: 50%;
-                }
+            .room-image {
+                width: 50%;
+            }
 
-            </style>
-        </head>
-        <body>
+        </style>
+    </head>
+    <body>
 
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">navbar</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">about</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Tents
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="parry.html">fisher king: parry's oasis</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="simon.html">with honors: simon's winter escape</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="make-reservation.html" tabindex="-1" aria-disabled="true">book now</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html" tabindex="-1" aria-disabled="true">contact</a>
-                            </li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">about</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tents
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="parry.html">fisher king: parry's oasis</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="simon.html">with honors: simon's winter escape</a></li>
                         </ul>
-                    </div>
-                </div>
-            </nav>
-
-
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col">
-                        <h1 class="text-center mt-4">making a reservation page</h1>
-                    </div>
-                </div>
-
-
-                <div class="row">
-                    <div class="col text-center">
-                        <a href="make-reservation.html" class="btn btn-success">make reservation now</a>
-                    </div>
-                </div>
-
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservation.html" tabindex="-1" aria-disabled="true">book now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" tabindex="-1" aria-disabled="true">contact</a>
+                    </li>
+                </ul>
             </div>
+        </div>
+    </nav>
 
-            <footer class="my-footer">
-                <div class="row">
-                    <div class="col">
-                        left
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="mt-3">make reservation</h1>
+                <form method="post" action="" class="needs-validation" novalidate>
+                    <div class="form-group mt-3">
+                        <label for="first_name">first name:</label>
+                        <input class="form-control" id="first_name" autocomplete="off" type='text' name='first_name' value="" required>
                     </div>
-
-                    <div class="col">
-                        center
+                    <div class="form-group">
+                        <label for="last_name">last name:</label>
+                        <input class="form-control" id="last_name" autocomplete="off" type='text' name='last_name' value="" required>
                     </div>
-
-                    <div class="col">
-                        right
+                    <div class="form-group">
+                        <label for="email">email:</label>
+                        <input class="form-control" id="email" autocomplete="off" type='email' name='email' value="" required>
                     </div>
-                </div>
-            </footer>
+                    <div class="form-group">
+                        <label for="phone">phone:</label>
+                        <input class="form-control" id="phone" autocomplete="off" type='email' name='phone' value="" required>
+                    </div>
+                    <hr>
+                    <input type="submit" class="btn btn-primary" value="make reservation">
+                </form>
+            </div>
+        </div>
+    </div>
 
-            <!--<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-            -->
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 
-        </body>
-    </html>
+<footer class="my-footer">
+    <div class="row">
+        <div class="col">
+            left
+        </div>
+
+        <div class="col">
+            center
+        </div>
+
+        <div class="col">
+            right
+        </div>
+    </div>
+</footer>
+
+<!--<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+</body>
+</html>
