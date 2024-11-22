@@ -10,5 +10,6 @@ booking and reservation site for your urban destination camping desires
  * [Bootstrap v5.3](https://getbootstrap.com/)
  * [Vanillajs-Datepicker Latest](https://github.com/mymth/vanillajs-datepicker)
  * [Notie Latest (notifications for the user)](https://github.com/jaredreich/notie)
+ * [Sweetalart2 Latest (Modal popups to notify user)] (https://github.com/sweetalert2/sweetalert2)
 
 
