@@ -1,0 +1,66 @@
+{{template "base" .}}
+
+{{define "content"}}
+
+    <div class="container">
+        <div class="row">
+            <div class="col=">
+                <img src="/static/images/parry.png" class="rounded mx-auto d-block img-fluid img-thumbnail room-image" alt="simon-image">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center mt-4">parry's oasis</h1>
+                <p>
+                    Your home away form home, set on the majestic waters of the Atlantic Ocean, this will be a vacation to remember.
+                    Your home away form home, set on the majestic waters of the Atlantic Ocean, this will be a vacation to remember.
+                    Your home away form home, set on the majestic waters of the Atlantic Ocean, this will be a vacation to remember.
+                    Your home away form home, set on the majestic waters of the Atlantic Ocean, this will be a vacation to remember.
+                    Your home away form home, set on the majestic waters of the Atlantic Ocean, this will be a vacation to remember.
+                    Your home away form home, set on the majestic waters of the Atlantic Ocean, this will be a vacation to remember.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col text-center">
+                <a href="#!" id="check-availability-btn" class="btn btn-success">check availability</a>
+            </div>
+        </div>
+
+    </div>
+
+{{end}}
+
+{{define "js"}}
+    <script>
+        document.getElementById("check-availability-btn").addEventListener("click", function() {
+
+            let customHTML = `
+                                    <form id="check-availability-form" action="" method="post" novalidate class="needs-validation">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="row" id="res-dates-check-popup">
+                                                    <div class="col">
+                                                        <input required class="form-control" type="text" name="start" id="start" placeholder="arrival">
+                                                    </div>
+                                                    <div class="col">
+                                                        <input required class="form-control" type="text" name="end" id="end" placeholder="departure">
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                 `;
+
+            notifyPrompt().customHTML({title: "select your dates", html: customHTML})
+
+        })
+    </script>
+
+{{end}}

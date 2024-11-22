@@ -17,6 +17,11 @@ func routes(app *config.AppConfig) http.Handler {
 
 	mux.Get("/", handlers.Repo.Home)
 	mux.Get("/about", handlers.Repo.About)
+	mux.Get("/contact", handlers.Repo.Contact)
+	mux.Get("/search-availability", handlers.Repo.Availability)
+	mux.Get("/make-reservation", handlers.Repo.Reservation)
+	mux.Get("/parry", handlers.Repo.Parry)
+	mux.Get("/simon", handlers.Repo.Simon)
 
 	// handling serving the static files
 	// create a Handler, fileServer using the contents of the filesystem location supplied

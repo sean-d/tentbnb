@@ -46,3 +46,28 @@ func (rep *Repository) About(w http.ResponseWriter, r *http.Request) {
 
 	render.TemplateRender(w, "about.page.gohtml", &models.TemplateData{StringMap: stringMap})
 }
+
+// Contact is the contact page handler
+func (rep *Repository) Contact(w http.ResponseWriter, r *http.Request) {
+	render.TemplateRender(w, "contact.page.gohtml", &models.TemplateData{})
+}
+
+// Availability is the search availability handler
+func (rep *Repository) Availability(w http.ResponseWriter, r *http.Request) {
+	render.TemplateRender(w, "search-availability.page.gohtml", &models.TemplateData{})
+}
+
+// Reservation is the reservation handler
+func (rep *Repository) Reservation(w http.ResponseWriter, r *http.Request) {
+	render.TemplateRender(w, "make-reservation.page.gohtml", &models.TemplateData{})
+}
+
+// Parry is the parry handler
+func (rep *Repository) Parry(w http.ResponseWriter, r *http.Request) {
+	render.TemplateRender(w, "parry.page.gohtml", &models.TemplateData{})
+}
+
+// Simon is the simon handler
+func (rep *Repository) Simon(w http.ResponseWriter, r *http.Request) {
+	render.TemplateRender(w, "simon.page.gohtml", &models.TemplateData{})
+}
